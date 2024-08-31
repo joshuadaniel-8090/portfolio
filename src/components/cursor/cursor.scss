@@ -1,14 +1,26 @@
-@import "../../app.scss";
+// @import "../../app.scss";
 
-.cursor{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid white;
+// .cursor{
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   border: 1px solid white;
+//   position: fixed;
+//   z-index: 999;
+
+//   @include mobile{
+//     display: none;
+//   }
+// }
+
+.cursor {
   position: fixed;
-  z-index: 999;
-
-  @include mobile{
-    display: none;
-  }
+  width: 20px;
+  height: 20px;
+  background-color: rgba(46, 187, 46, 0.8); /* White cursor with some transparency */
+  border-radius: 50%;
+  pointer-events: none; /* This prevents the cursor from interfering with clicks */
+  box-shadow: 0 0 10px 5px rgba(121, 228, 114, 0.8); /* Glowing effect */
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensure the cursor is always on top */
 }
