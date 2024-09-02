@@ -28,7 +28,7 @@
 // export default Cursor;
 
 import React, { useEffect, useState } from "react";
-import "./Cursor.scss"; // Import the CSS file for styling
+import "./cursor.scss"; // Import the CSS file for styling
 
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -49,7 +49,7 @@ const Cursor = () => {
 
   return (
     <div
-      className="glowing-cursor"
+      className="cursor"
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
     />
   );
