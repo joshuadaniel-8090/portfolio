@@ -28,7 +28,7 @@
 // export default Cursor;
 
 import React, { useEffect, useState } from 'react';
-import './GlowingCursor.css'; // Import the CSS file for styling
+import './Cursor.scss'; // Import the CSS file for styling
 
 const GlowingCursor = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
