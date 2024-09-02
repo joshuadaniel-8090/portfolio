@@ -9,7 +9,7 @@ const items = [
     title1: "For Bonjour Canada",
     img: "./public/canadaflag.png",
     desc: "Developed a professional website for a client, demonstrating my ability to create visually stunning, responsive, and user-friendly designs. Passionate about transforming ideas into engaging digital experiences that drive results.",
-    webpage: "https://bonjourcanada.com"
+    webpage: "https://bonjourcanada.com",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const items = [
     title1: "For Holy Trinity Church",
     img: "./public/lyric.png",
     desc: "Developed a user-friendly lyrics webpage for our church, making it easy for everyone to access and follow along with songs. This project showcases my skills in creating practical and engaging digital solutions.",
-    webpage: "https://tamil-christmas.surge.sh"
+    webpage: "https://tamil-christmas.surge.sh",
   },
 ];
 
@@ -41,14 +41,18 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <h3>{item.title1}</h3>
             <p>{item.desc}</p>
-            <button><a href={item.webpage} rel="noopener" target="_blank">Visit Site</a></button>
+            <button>
+              <a href={item.webpage} rel="noopener" target="_blank">
+                Visit Site
+              </a>
+            </button>
           </motion.div>
         </div>
       </div>
     </section>
   );
 };
-  ``
+``;
 const Portfolio = () => {
   const ref = useRef();
 

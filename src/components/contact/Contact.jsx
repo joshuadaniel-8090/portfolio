@@ -38,7 +38,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setSuccess(true)
+          setSuccess(true);
         },
         (error) => {
           setError(true);
@@ -58,7 +58,11 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span><a href="mailto:jjoshuadaniel1234@gmail.com">jjoshuadaniel1234@gmail.com</a></span>
+          <span>
+            <a href="mailto:jjoshuadaniel1234@gmail.com">
+              jjoshuadaniel1234@gmail.com
+            </a>
+          </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           {/* <h2>Address</h2>
@@ -66,7 +70,9 @@ const Contact = () => {
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span><a href="tel: +918072609214">+91 8072609214</a></span>
+          <span>
+            <a href="tel: +918072609214">+91 8072609214</a>
+          </span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -106,9 +112,9 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
-          <textarea rows={8} placeholder="Message" name="message"/>
+          <input type="text" required placeholder="Name" name="name" />
+          <input type="email" required placeholder="Email" name="email" />
+          <textarea rows={8} placeholder="Message" name="message" />
           <button>Submit</button>
           {error && "Error"}
           {success && "Success"}

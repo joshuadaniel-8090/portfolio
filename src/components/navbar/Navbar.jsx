@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Sidebar/>
+      <Sidebar />
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
@@ -15,13 +15,25 @@ const Navbar = () => {
           {/* Company */}
         </motion.span>
         <div className="social">
-          <a href="https://www.github.com/joshuadaniel-8090" rel="noopener" target="_blank">
+          <a
+            href="https://www.github.com/joshuadaniel-8090"
+            rel="noopener"
+            target="_blank"
+          >
             <img src="/github.png" alt="" />
           </a>
-          <a href="https://www.instagram.com/joshua___daniel/" rel="noopener" target="_blank">
+          <a
+            href="https://www.instagram.com/joshua___daniel/"
+            rel="noopener"
+            target="_blank"
+          >
             <img src="/instagram.png" alt="" />
           </a>
-          <a href="https://www.linkedin.com/in/joshuadaniel8090" rel="noopener" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/joshuadaniel8090"
+            rel="noopener"
+            target="_blank"
+          >
             <img src="/linkedin.png" alt="" />
           </a>
           {/* <a href="#">
